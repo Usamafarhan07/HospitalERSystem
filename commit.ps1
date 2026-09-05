@@ -31,11 +31,11 @@ function Commit-Group {
 }
 
 Commit-Group -Message "Created project structure" -Files @("README.md", "commit.sh", "commit.ps1")
-Commit-Group -Message "Implemented patient BST" -Files @("src/Patient.java", "src/PatientBST.java")
-Commit-Group -Message "Implemented emergency queue" -Files @("src/EmergencyQueue.java")
-Commit-Group -Message "Implemented treatment stack" -Files @("src/TreatmentRecord.java", "src/TreatmentStack.java")
-Commit-Group -Message "Implemented patient visit history" -Files @("src/Visit.java", "src/VisitLinkedList.java")
-Commit-Group -Message "Added main program and demo driver" -Files @("src/Main.java", "src/Demo.java")
+Commit-Group -Message "Implemented patient BST" -Files @("Patient.java", "PatientBST.java")
+Commit-Group -Message "Implemented emergency queue" -Files @("EmergencyQueue.java")
+Commit-Group -Message "Implemented treatment stack" -Files @("TreatmentRecord.java", "TreatmentStack.java")
+Commit-Group -Message "Implemented patient visit history" -Files @("Visit.java", "VisitLinkedList.java")
+Commit-Group -Message "Added main program and demo driver" -Files @("Main.java", "Demo.java")
 Commit-Group -Message "Updated README" -Files @("README.md")
 
 $hasOrigin = git remote get-url origin 2>$null
